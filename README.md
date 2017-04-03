@@ -1,3 +1,5 @@
+## 在线小工具
+#### [color](http://tools.jb51.net/color/jPicker) [reg](http://tools.jb51.net/regex/create_reg) [other online tools ](http://tools.jb51.net/code)
 ## 日常生活中可能用到的命令和模板
 ### node.js环境搭建
 ```
