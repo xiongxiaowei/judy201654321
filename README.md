@@ -1,4 +1,4 @@
-## es6高大上遍历json
+## Es6高大上遍历json
 
 `Object.keys(filters).forEach(key => Vue.filter(key, filters[key]))`
 ### vue.js中常见变量(不清楚的可以console出来)
@@ -100,7 +100,7 @@ p{
 </style>
 ```
 ## 在线小工具
-#### [color](http://tools.jb51.net/color/jPicker) [reg](http://tools.jb51.net/regex/create_reg) [other online tools ](http://tools.jb51.net/code)
+#### [color](http://tools.jb51.net/color/jPicker) [reg](http://tools.jb51.net/regex/create_reg) [icon](http://tools.jb51.net/aideddesign/ico_img) [ps](http://tools.jb51.net/aideddesign/webps) [hash加密解密](http://tools.jb51.net/password/hash_encrypt) [彩虹字体](http://tools.jb51.net/aideddesign/txt_caihongzi) [markdown-html互相转换](http://tools.jb51.net/aideddesign/html2markdown) [CSS样式生成工具](http://tools.jb51.net/aideddesign/css_create) [other-online-tools >>>](http://tools.jb51.net/code)
 ## 日常生活中可能用到的命令和模板
 ### node.js环境搭建
 ```
