@@ -67,8 +67,9 @@ new Vue({
 })
 
 ```
+#### routes.js
 ```
-//routes.js
+
 import Hello from './components/Hello'
 import News from './components/news'
 import Sports from './components/sports'
