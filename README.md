@@ -1,7 +1,104 @@
 ## es6高大上遍历json
 
 `Object.keys(filters).forEach(key => Vue.filter(key, filters[key]))`
+### vue.js中常见变量(不清楚的可以console出来)
+后台获取数据的方法在mounted中调用，在methods中定义，那么数据获取到了存放在哪里呢》？
+```
+data(){ 
+  return {
+    msg:[]/{}/''
+  }
+}
+```
+template： 属性中只要涉及（后台数据）变量，前面一定要加： HAI可以拼接字符串
+```
+this.$route.path
+this.$route.params.id
+this.$store.dispatch('hideFooter');
+技巧：预先加载用mounted函数
+mounted(){
+			this.fetchData(this.$route.params.id);
 
+			//发送 隐藏footer的 action
+			if(this.$route.path.indexOf('article')>0){
+				this.$store.dispatch('hideFooter');
+			}
+		},
+methods:{
+  fetchData(){}
+}    
+```
+## axios配置
+想玩转axios必须先理解url这个概念，默认会访问根目录下的index.html -》则对应的url为‘index.html’
+eg: http://127.0.0.1:8080/home
+### 配置
+#### main.js
+```
+import axios from 'axios'
+Vue.prototype.$http = axios
+axios.interceptors.request.use(function (config) {  //配置发送请求的信息
+  stores.dispatch('showLoading')  
+  return config;
+}, function (error) {
+  return Promise.reject(error);
+});
+
+axios.interceptors.response.use(function (response) { //配置请求回来的信息
+  stores.dispatch('hideLoading')
+  return response;
+}, function (error) {
+
+  return Promise.reject(error);
+});
+
+/*axios.defaults.baseURL = (process.env.NODE_ENV !=='production' ? config.dev.httpUrl:config.build.httpUrl);
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';*/配置post请求头
+//axios.defaults.baseURL='http://localhost:8082/';配置根目录
+Vue.prototype.$http = axios  //其他页面在使用axios的时候直接  this.$http就可以了
+
+```
+```
+<template lang="html">
+  <div>
+    <div v-for="(val,index) in artical">
+      <h1>{{val.title}}</h1>
+      <img :src="val.author_face" alt="" width="30" height="30">
+      <p v-html=val.content></p>
+    </div>
+ </div>
+</template>
+<script type="text/ecmascript-6">
+export default {
+  data(){
+    return{
+      artical:[]
+    }
+  },
+  mounted(){
+    this.fitchData()
+  },
+  methods:{
+    fitchData(){
+      // console.log(this.$http.get)
+      this.$http.get('index.data').then(function(res){
+         this.artical=res.data
+      }.bind(this)).catch(function(error){
+        console.log('home:',error)
+      })
+    }
+  }
+}
+</script>
+
+<style>
+p{
+  text-indent: 2em;
+  color: blue;
+  font-family: "微软雅黑";
+  text-align:left;
+}
+</style>
+```
 ## 在线小工具
 #### [color](http://tools.jb51.net/color/jPicker) [reg](http://tools.jb51.net/regex/create_reg) [other online tools ](http://tools.jb51.net/code)
 ## 日常生活中可能用到的命令和模板
