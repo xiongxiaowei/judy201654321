@@ -1,3 +1,46 @@
+### 获取后台数据模版
+```
+<template lang="html">
+  <div>
+    <div v-for="(val,index) in msg">
+      <!-- <h1>{{val}}</h1> -->
+      <p>{{msg.seller}}</p>
+    </div>
+ </div>
+</template>
+<script>
+export default {
+  data(){
+    return{
+      msg:{}
+    }
+  },
+  mounted(){
+    this.fitchData()
+  },
+  methods:{
+    fitchData(){
+      // console.log(this.$http.get)
+      this.$http.get('data.json').then(function(res){
+         this.msg=res.data
+      }.bind(this)).catch(function(error){
+        console.log('home:',error)
+      })
+    }
+  }
+}
+</script>
+
+<style>
+p{
+  text-indent: 2em;
+  color: blue;
+  font-family: "微软雅黑";
+  text-align:left;
+}
+</style>
+
+```
 ### [在线工具网站1](http://www.egouz.com/tools/2.html) [在线工具2](http://www.egouz.com/soft/)
 ## Es6高大上遍历json
 `Array.from({}).forEach((i)=>console.log(i))`</br>
