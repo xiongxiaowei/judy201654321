@@ -1,6 +1,6 @@
 ### [在线工具网站1](http://www.egouz.com/tools/2.html) [在线工具2](http://www.egouz.com/soft/)
 ## Es6高大上遍历json
-`Array.from({}).forEach((i)=>console.log(i))`
+`Array.from({}).forEach((i)=>console.log(i))`</br>
 `Object.keys(filters).forEach(key => Vue.filter(key, filters[key]))`
 ### vue.js中常见变量(不清楚的可以console出来)
 后台获取数据的方法在mounted中调用，在methods中定义，那么数据获取到了存放在哪里呢》？
