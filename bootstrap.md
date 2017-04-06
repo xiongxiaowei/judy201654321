@@ -16,3 +16,33 @@
 </body>
 </html>
 ```
+### 栅格化系统
+```
+ <div class="container">
+      <div class="row">
+           <div class="col-md-6"></div>
+           <div class="col-md-6"></div>
+      </div>
+  </div>    
+ 用jade的语法就是这样
+ .container
+   .row
+     .col-md-n
+eg:
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="background: red">
+            apple
+        </div>
+        <div class="col-md-4">
+            pear
+        </div>
+        <div class="col-md-4">
+            orange
+        </div>
+
+      </div>
+
+    </div>
+```
