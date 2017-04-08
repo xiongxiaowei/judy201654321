@@ -65,19 +65,25 @@ eg:
 
     </div>
 ```
+```
 .cantainer
  .row
   .col-md/xs-n n(max)=12
+```
 --------------------------面板--------
+<hr>
 使用语境状态类 panel-primary、panel-success、panel-info、panel-warning、panel-danger，来设置带语境色彩的面板，实例如下：
+```
 .panel-success
    .panel-heading
    .panel-title
    .panel-body
    .panel-footer
    .table
-     
+ ```    
 -----------------------table-------------------------------------
+<hr>
+```
         <table class="table">
 		<th>name</th>
 		<th>mark</th>
@@ -89,7 +95,21 @@ eg:
 		  <td>200</td>
 		 </tr>
 	</table>
+```
+实际效果如下<br>
+<table class="table">
+		<th>name</th>
+		<th>mark</th>
+		<tr>
+		  <td>产品 A</td>
+		  <td>200</td>
+		</tr>
+		  <tr><td>产品 A</td>
+		  <td>200</td>
+		 </tr>
+	</table>
 ----------------------------ul-------------------------------
+<hr>
 ```
   <ul class="list-group">
       <li class="list-group-item">免费域名注册</li>
@@ -103,11 +123,13 @@ eg:
 向元素 <ul> 添加 class .list-group。
 向 <li> 添加 class .list-group-item。
 -------------------------------well-----------------------------------
+<hr>
 Well 是一种会引起内容凹陷显示或插图效果的容器 <div>。为了创建 Well，只需要简单地把内容放在带有 class .well 的 <div> 中即可。
 ```
 .well well-lg
 .well well-sm
 ```
 ------------------------badge------------------------------------------
-<span class="badge">新</span>
-我们可以向任意的列表项添加徽章组件，它会自动定位到右边。只需要在 <li> 元素中添加 <span class="badge"> 即可
+<hr>
+`<span class="badge">新</span>`
+我们可以向任意的列表项添加徽章组件，它会自动定位到右边。只需要在 <li> 元素中添加` <span class="badge">` 即可
