@@ -110,20 +110,12 @@ eg:
 		  <td>200</td>
 		 </tr>
 	</table>
-###　ul
+### 　ul
 列表组件用于以列表形式呈现复杂的和自定义的内容。创建一个基本的列表组的步骤如下：
-向元素 <ul> 添加 class .list-group。
-向 <li> 添加 class .list-group-item。
-<hr>
-```
-   <ul class="list-group">
-      <li class="list-group-item">免费域名注册</li>
-      <li class="list-group-item">免费 Window 空间托管</li>
-      <li class="list-group-item">图像的数量</li>
-      <li class="list-group-item">24*7 支持</li>
-      <li class="list-group-item">每年更新成本</li>
-   </ul>
-```
+向元素 <ul> 添加 class `.list-group`
+向 <li> 添加 class `.list-group-item`
+
+
 
 ### well
 <hr>
