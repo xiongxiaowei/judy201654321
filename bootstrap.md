@@ -116,24 +116,29 @@ eg:
 向 <li> 添加 class .list-group-item。
 <hr>
 ```
-  <ul class="list-group">
+   <ul class="list-group">
       <li class="list-group-item">免费域名注册</li>
       <li class="list-group-item">免费 Window 空间托管</li>
       <li class="list-group-item">图像的数量</li>
       <li class="list-group-item">24*7 支持</li>
       <li class="list-group-item">每年更新成本</li>
- </ul>
-``` 
+   </ul>
+```
 
 ### well
 <hr>
 Well 是一种会引起内容凹陷显示或插图效果的容器 <div>。为了创建 Well，只需要简单地把内容放在带有 class .well 的 <div> 中即可。
 ```
+
   .well well-lg
   .well well-sm
 ```
+
 ### badge
-我们可以向任意的列表项添加徽章组件，它会自动定位到右边。只需要在 <li> 元素中添加` <span class="badge">` 即可
+我们可以向任意的列表项添加徽章组件，它会自动定位到右边。只需要在 <li> 元素中添加 `<span class="badge">` 即可
 
 <hr>
-`<span class="badge">新</span>`
+
+```
+<span class="badge">新</span>
+```
