@@ -74,12 +74,12 @@ eg:
 <hr>
 使用语境状态类 panel-primary、panel-success、panel-info、panel-warning、panel-danger，来设置带语境色彩的面板，实例如下：
 ```
-.panel-success
-   .panel-heading
-   .panel-title
-   .panel-body
-   .panel-footer
-   .table
+   .panel-success
+     .panel-heading
+     .panel-title
+     .panel-body
+     .panel-footer
+     .table
 ```    
 ### table
 <hr>
@@ -123,14 +123,14 @@ eg:
       <li class="list-group-item">24*7 支持</li>
       <li class="list-group-item">每年更新成本</li>
  </ul>
- ```
+``` 
 
 ### well
 <hr>
 Well 是一种会引起内容凹陷显示或插图效果的容器 <div>。为了创建 Well，只需要简单地把内容放在带有 class .well 的 <div> 中即可。
 ```
-.well well-lg
-.well well-sm
+  .well well-lg
+  .well well-sm
 ```
 ### badge
 我们可以向任意的列表项添加徽章组件，它会自动定位到右边。只需要在 <li> 元素中添加` <span class="badge">` 即可
